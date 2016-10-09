@@ -1,0 +1,42 @@
+{
+    "res": {
+        "lib/demo.css": {
+            "uri": "/lib/demo.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "lib/mod.js": {
+            "uri": "/lib/mod.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "modules/jquery/jquery-3.1.0.min.js": {
+            "uri": "/modules/jquery/jquery-3.1.0.min.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "modules/views/demo.js": {
+            "uri": "/modules/views/demo.js",
+            "type": "js",
+            "pkg": "p0"
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "/pkg/lib.js",
+            "type": "js",
+            "has": [
+                "lib/mod.js",
+                "modules/jquery/jquery-3.1.0.min.js",
+                "modules/views/demo.js"
+            ]
+        },
+        "p1": {
+            "uri": "/pkg/aio.css",
+            "type": "css",
+            "has": [
+                "lib/demo.css"
+            ]
+        }
+    }
+}
